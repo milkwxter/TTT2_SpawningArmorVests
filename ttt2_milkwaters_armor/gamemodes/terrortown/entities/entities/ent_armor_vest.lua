@@ -51,7 +51,7 @@ if SERVER then
 		net.Start("EquipArmorVest")
         net.WriteEntity(ply)
         net.WriteString("models/player/armor_module3m/module3m.mdl")
-        net.Send(ply)
+        net.Send(player.GetAll())
 		
         -- delete item so he cant use it again
         self:Remove()
