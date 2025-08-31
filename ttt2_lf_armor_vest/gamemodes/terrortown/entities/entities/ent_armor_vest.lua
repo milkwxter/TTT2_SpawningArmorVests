@@ -109,8 +109,6 @@ if CLIENT then
 
 		if not IsValid(ply) then return end
 		
-		print("Trying to remove vest from " .. ply:Nick())
-		
 		if vestData[ply] and IsValid(vestData[ply].model) then
 			vestData[ply].model:Remove()
 		end
